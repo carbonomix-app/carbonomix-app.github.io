@@ -181,14 +181,15 @@ modal.classList.add("opacity-0")
 modal.style.display = "none"
 modal.close()
 })
+  user.value = "Rajesh"
+login("Rajesh")
 window.dform.addEventListener("submit", () => {
 switch (email.value){
 case (" "):{
 console.log(password.value, password)
 if (password.value == zpassword) {
 console.log("Logged In")
-user.value = "Rajesh"
-login("Rajesh")
+
 }
 }
 case ("bhupendrafromus@gmail.com"):{
