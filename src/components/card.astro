@@ -1,7 +1,7 @@
 ---
 
 interface Card {
-    type:"Ola" | "IRCTC" | "IBus"| "Uber" | "Urban" | "Apple" | "Samsung" | "GPay" | "PayTM" | "Airtel" | "Indigo",
+    type:"Toll" | "IRCTC" | "IBus"| "Uber" | "Urban" | "Apple" | "Samsung" | "GPay" | "PayTM" | "Airtel" | "Indigo",
     heading: string;
     desc: string;
 }
@@ -34,7 +34,7 @@ const {heading,desc,type,price} = Astro.props as Card
                 ? "urbanclap.webp"
                 : type == "IBus" 
                 ? "ibus.png"
-                 : "/ola.webp"
+                 : "/toll.webp"
         }/>
     </div>
     <div class="flex-1 min-w-9 grid justify-center border-l-solid border-l-2 ml-7">
