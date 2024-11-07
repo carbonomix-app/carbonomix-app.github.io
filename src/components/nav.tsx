@@ -19,6 +19,10 @@ export const NavBar = component$<NavBarProps>((props) => {
     const a = useSignal<HTMLElement>()
 
     useVisibleTask$(() => {
+                            loggedIn.value = true
+                    user.value = "Rajesh"
+                    closeDialog()
+                    localStorage.setItem("user", user.value)
         credit.value = +localStorage.getItem('credit')
         span.value.style.setProperty("--num", `${credit.value}`)
         window.addEventListener("storage", () => {
